@@ -14,8 +14,6 @@ export class Cron {
     console.log('Start Cron Jobs');
 
     cron.schedule('*/2 * * * * *', () => {
-      const d = new Date();
-      console.log(d);
       this.cronController.start()
     });
   }
